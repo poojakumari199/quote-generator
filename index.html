@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="pictures/favicon-16x16.png"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Quote Generator</title>
+</head>
+<body>
+    <div class="quote-container" id="quote-container">
+        <!-- Quote -->
+        <div class="quote-text">
+            <i class="fas fa-quote-left"></i>
+<span id="quote"></span>
+        </div>
+        <!-- Author -->
+        <div class="quote-author">
+            <span id="author"></span>
+        </div>
+        <!-- Buttons -->
+        <div class="button-container">
+            <button class="twitter-button" id="twitter" title="Tweet this!">
+               <img src = "data:image/jpeg;base64,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" width="15px" height="15px" text-align = "space-between" alt="twitter" />
+            </button>
+            <button id="new-quote">New Quote</button>
+        </div>
+    </div> 
+
+    <!-- Loader -->
+    <div class="loader" id="loader">
+
+    </div>
+      
+    <!-- Script -->
+    <script src="quotes.js"></script>
+    <script src = "script.js"></script>
+</body>
+</html>
